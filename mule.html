@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humanitarian Project Progress Tool</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: #0077b6;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+    h2 {
+        color: #023e8a;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background: #90e0ef;
+    }
+    tr:nth-child(even) {
+        background: #e0f7fa;
+    }
+    .uom {
+        font-weight: bold;
+        color: #0077b6;
+    }
+    input[type="number"] {
+        width: 80px;
+        padding: 3px;
+        text-align: right;
+    }
+    .submit-btn {
+        background: #0077b6;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+    .submit-btn:hover {
+        background: #023e8a;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Humanitarian Project Monthly Progress Tool</h1>
+    <p>Enter monthly activity progress for each project with predefined unit of measurement.</p>
+</header>
+
+<main>
+
+<form>
+
+    <!-- ================= WASH ================= -->
+    <h2>WASH Project</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Unit of Measurement</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <td>Water Supply Installation</td>
+            <td class="uom">Number of Water Points</td>
+            <td><input type="number" name="wash_water_jan"></td>
+            <td><input type="number" name="wash_water_feb"></td>
+            <td><input type="number" name="wash_water_mar"></td>
+            <td><input type="number" name="wash_water_apr"></td>
+            <td><input type="number" name="wash_water_may"></td>
+            <td><input type="number" name="wash_water_jun"></td>
+            <td><input type="number" name="wash_water_jul"></td>
+            <td><input type="number" name="wash_water_aug"></td>
+            <td><input type="number" name="wash_water_sep"></td>
+            <td><input type="number" name="wash_water_oct"></td>
+            <td><input type="number" name="wash_water_nov"></td>
+            <td><input type="number" name="wash_water_dec"></td>
+        </tr>
+        <tr>
+            <td>Sanitation Facilities Constructed</td>
+            <td class="uom">Number of Toilets</td>
+            <td><input type="number" name="wash_san_jan"></td>
+            <td><input type="number" name="wash_san_feb"></td>
+            <td><input type="number" name="wash_san_mar"></td>
+            <td><input type="number" name="wash_san_apr"></td>
+            <td><input type="number" name="wash_san_may"></td>
+            <td><input type="number" name="wash_san_jun"></td>
+            <td><input type="number" name="wash_san_jul"></td>
+            <td><input type="number" name="wash_san_aug"></td>
+            <td><input type="number" name="wash_san_sep"></td>
+            <td><input type="number" name="wash_san_oct"></td>
+            <td><input type="number" name="wash_san_nov"></td>
+            <td><input type="number" name="wash_san_dec"></td>
+        </tr>
+    </table>
+
+    <!-- ================= Shelter ================= -->
+    <h2>Shelter Project</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Unit of Measurement</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <td>Temporary Shelter Distribution</td>
+            <td class="uom">Number of Shelters</td>
+            <td><input type="number" name="shelter_temp_jan"></td>
+            <td><input type="number" name="shelter_temp_feb"></td>
+            <td><input type="number" name="shelter_temp_mar"></td>
+            <td><input type="number" name="shelter_temp_apr"></td>
+            <td><input type="number" name="shelter_temp_may"></td>
+            <td><input type="number" name="shelter_temp_jun"></td>
+            <td><input type="number" name="shelter_temp_jul"></td>
+            <td><input type="number" name="shelter_temp_aug"></td>
+            <td><input type="number" name="shelter_temp_sep"></td>
+            <td><input type="number" name="shelter_temp_oct"></td>
+            <td><input type="number" name="shelter_temp_nov"></td>
+            <td><input type="number" name="shelter_temp_dec"></td>
+        </tr>
+        <tr>
+            <td>Permanent Shelter Construction</td>
+            <td class="uom">Number of Houses</td>
+            <td><input type="number" name="shelter_perm_jan"></td>
+            <td><input type="number" name="shelter_perm_feb"></td>
+            <td><input type="number" name="shelter_perm_mar"></td>
+            <td><input type="number" name="shelter_perm_apr"></td>
+            <td><input type="number" name="shelter_perm_may"></td>
+            <td><input type="number" name="shelter_perm_jun"></td>
+            <td><input type="number" name="shelter_perm_jul"></td>
+            <td><input type="number" name="shelter_perm_aug"></td>
+            <td><input type="number" name="shelter_perm_sep"></td>
+            <td><input type="number" name="shelter_perm_oct"></td>
+            <td><input type="number" name="shelter_perm_nov"></td>
+            <td><input type="number" name="shelter_perm_dec"></td>
+        </tr>
+    </table>
+
+    <!-- ================= Health ================= -->
+    <h2>Health Project</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Unit of Measurement</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <td>Health Outreach Sessions</td>
+            <td class="uom">Number of Sessions</td>
+            <td><input type="number" name="health_session_jan"></td>
+            <td><input type="number" name="health_session_feb"></td>
+            <td><input type="number" name="health_session_mar"></td>
+            <td><input type="number" name="health_session_apr"></td>
+            <td><input type="number" name="health_session_may"></td>
+            <td><input type="number" name="health_session_jun"></td>
+            <td><input type="number" name="health_session_jul"></td>
+            <td><input type="number" name="health_session_aug"></td>
+            <td><input type="number" name="health_session_sep"></td>
+            <td><input type="number" name="health_session_oct"></td>
+            <td><input type="number" name="health_session_nov"></td>
+            <td><input type="number" name="health_session_dec"></td>
+        </tr>
+        <tr>
+            <td>Medical Supplies Distributed</td>
+            <td class="uom">Number of Kits</td>
+            <td><input type="number" name="health_supplies_jan"></td>
+            <td><input type="number" name="health_supplies_feb"></td>
+            <td><input type="number" name="health_supplies_mar"></td>
+            <td><input type="number" name="health_supplies_apr"></td>
+            <td><input type="number" name="health_supplies_may"></td>
+            <td><input type="number" name="health_supplies_jun"></td>
+            <td><input type="number" name="health_supplies_jul"></td>
+            <td><input type="number" name="health_supplies_aug"></td>
+            <td><input type="number" name="health_supplies_sep"></td>
+            <td><input type="number" name="health_supplies_oct"></td>
+            <td><input type="number" name="health_supplies_nov"></td>
+            <td><input type="number" name="health_supplies_dec"></td>
+        </tr>
+    </table>
+
+    <!-- ================= Protection ================= -->
+    <h2>Protection Project</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Unit of Measurement</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <td>Protection Awareness Sessions</td>
+            <td class="uom">Number of Sessions</td>
+            <td><input type="number" name="protection_session_jan"></td>
+            <td><input type="number" name="protection_session_feb"></td>
+            <td><input type="number" name="protection_session_mar"></td>
+            <td><input type="number" name="protection_session_apr"></td>
+            <td><input type="number" name="protection_session_may"></td>
+            <td><input type="number" name="protection_session_jun"></td>
+            <td><input type="number" name="protection_session_jul"></td>
+            <td><input type="number" name="protection_session_aug"></td>
+            <td><input type="number" name="protection_session_sep"></td>
+            <td><input type="number" name="protection_session_oct"></td>
+            <td><input type="number" name="protection_session_nov"></td>
+            <td><input type="number" name="protection_session_dec"></td>
+        </tr>
+        <tr>
+            <td>Case Management Provided</td>
+            <td class="uom">Number of Cases</td>
+            <td><input type="number" name="protection_case_jan"></td>
+            <td><input type="number" name="protection_case_feb"></td>
+            <td><input type="number" name="protection_case_mar"></td>
+            <td><input type="number" name="protection_case_apr"></td>
+            <td><input type="number" name="protection_case_may"></td>
+            <td><input type="number" name="protection_case_jun"></td>
+            <td><input type="number" name="protection_case_jul"></td>
+            <td><input type="number" name="protection_case_aug"></td>
+            <td><input type="number" name="protection_case_sep"></td>
+            <td><input type="number" name="protection_case_oct"></td>
+            <td><input type="number" name="protection_case_nov"></td>
+            <td><input type="number" name="protection_case_dec"></td>
+        </tr>
+    </table>
+
+    <!-- ================= Nutrition ================= -->
+    <h2>Nutrition Project</h2>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Unit of Measurement</th>
+            <th>Jan</th>
+            <th>Feb</th>
+            <th>Mar</th>
+            <th>Apr</th>
+            <th>May</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Aug</th>
+            <th>Sep</th>
+            <th>Oct</th>
+            <th>Nov</th>
+            <th>Dec</th>
+        </tr>
+        <tr>
+            <td>Children Screened for Malnutrition</td>
+            <td class="uom">Number of Children</td>
+            <td><input type="number" name="nutrition_screen_jan"></td>
+            <td><input type="number" name="nutrition_screen_feb"></td>
+            <td><input type="number" name="nutrition_screen_mar"></td>
+            <td><input type="number" name="nutrition_screen_apr"></td>
+            <td><input type="number" name="nutrition_screen_may"></td>
+            <td><input type="number" name="nutrition_screen_jun"></td>
+            <td><input type="number" name="nutrition_screen_jul"></td>
+            <td><input type="number" name="nutrition_screen_aug"></td>
+            <td><input type="number" name="nutrition_screen_sep"></td>
+            <td><input type="number" name="nutrition_screen_oct"></td>
+            <td><input type="number" name="nutrition_screen_nov"></td>
+            <td><input type="number" name="nutrition_screen_dec"></td>
+        </tr>
+        <tr>
+            <td>Supplementary Feeding Provided</td>
+            <td class="uom">Number of Beneficiaries</td>
+            <td><input type="number" name="nutrition_feeding_jan"></td>
+            <td><input type="number" name="nutrition_feeding_feb"></td>
+            <td><input type="number" name="nutrition_feeding_mar"></td>
+            <td><input type="number" name="nutrition_feeding_apr"></td>
+            <td><input type="number" name="nutrition_feeding_may"></td>
+            <td><input type="number" name="nutrition_feeding_jun"></td>
+            <td><input type="number" name="nutrition_feeding_jul"></td>
+            <td><input type="number" name="nutrition_feeding_aug"></td>
+            <td><input type="number" name="nutrition_feeding_sep"></td>
+            <td><input type="number" name="nutrition_feeding_oct"></td>
+            <td><input type="number" name="nutrition_feeding_nov"></td>
+            <td><input type="number" name="nutrition_feeding_dec"></td>
+        </tr>
+    </table>
+
+    <div style="text-align:center;">
+        <button type="submit" class="submit-btn">Submit Monthly Progress</button>
+    </div>
+
+</form>
+
+</main>
+
+</body>
+</html>
